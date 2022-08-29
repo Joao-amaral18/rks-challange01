@@ -1,0 +1,6 @@
+body{
+    background: var(--gray-600);
+}
+.Container{
+    width: 46rem;
+}
