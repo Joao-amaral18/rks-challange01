@@ -1,15 +1,17 @@
 .newTaskForm {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
   justify-content: center;
   max-width: 736px;
   margin: auto;
-  margin-top: -7.8rem;
+  width: 80%;
+  margin-top: -1.5rem;
 }
 .newTaskForm input {
   border-radius: 8px;
-  width: 80%;
   margin-right: 0.5rem;
+  width: 100%;
   background-color: var(--gray-500);
   color: var(--gray-300);
   padding: 1rem;

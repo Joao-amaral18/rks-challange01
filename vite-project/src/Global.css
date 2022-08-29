@@ -39,4 +39,5 @@
 
 body{
   font-smooth:always;
+    background: var(--gray-600);
 }

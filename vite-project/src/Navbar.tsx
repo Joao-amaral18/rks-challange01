@@ -4,9 +4,9 @@ import './Navbar.css'
 
 function Navbar() {
   return (
-    <div className='navbar'>
+    <header className='navbar'>
         <img src={Logo} alt="logo rockete figure" />
-    </div>
+    </header>
   )
 }
 

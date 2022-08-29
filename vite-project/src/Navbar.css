@@ -1,6 +1,6 @@
 .navbar{
     background-color: var(--gray-700);
-    width: 100vw;
+    margin: 0 auto;
     padding: 4.5rem 0 5rem;
     display: flex;
     justify-content: center;
