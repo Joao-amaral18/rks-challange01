@@ -1,22 +1,25 @@
 .newTaskForm {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    top: ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 736px;
+  margin: auto;
+  margin-top: -7.8rem;
 }
-.newTaskForm input{
-    border-radius: 5%;
-    margin-right: 0.5rem;
-    background-color: var(--gray-500);
-
+.newTaskForm input {
+  border-radius: 8px;
+  width: 80%;
+  margin-right: 0.5rem;
+  background-color: var(--gray-500);
+  color: var(--gray-300);
+  padding: 1rem;
 }
-.newTaskForm button{
-    padding: 1rem;
-    background-color: var(--blue-dark);
-    font-weight: 600;
-    color: var(--white);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.newTaskForm button {
+  padding: 1rem;
+  background-color: var(--blue-dark);
+  font-weight: 600;
+  color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

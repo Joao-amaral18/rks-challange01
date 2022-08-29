@@ -1,6 +1,11 @@
 body{
     background: var(--gray-600);
+    display: flex;
+    justify-content: center;
 }
 .Container{
     width: 46rem;
+    height: 100vw;
+    margin-top: 100px;
+    
 }
