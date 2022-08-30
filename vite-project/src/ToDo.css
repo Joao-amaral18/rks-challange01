@@ -1,0 +1,16 @@
+.task{
+    padding: 1rem;
+    background: var(--gray-500);
+    color: var(--gray-100);
+    margin: 0.75rem 0 0.75rem;
+    border: solid 1px var(--gray-400);
+    border-radius: 8px;
+}
+.complete{
+    color: var(--gray-300);
+    text-decoration-line: line-through;
+}
+
+.checkmark{
+    margin: 0 0.5rem 0 0rem
+}

@@ -21,7 +21,6 @@ function AddNewTodo() {
     ]);
     setNewTask('')
   }
-  console.log(task)
   function handleNewTaskChange($event: any){
     setNewTask($event?.target.value)
   }
@@ -34,9 +33,11 @@ function AddNewTodo() {
       </button>
     </form>
     <div>
-     {task.map((val: { id: Key | null | undefined; title: any; })=> (
+     {task.map((val: { id: any; isFinished: any; title: any; })=> (
       <ToDo
         key={val.id}
+        id={val.id}
+        isFinished={val.isFinished}
         title={val.title}
       />
     ))}
