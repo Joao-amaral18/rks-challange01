@@ -6,13 +6,13 @@ import ToDo from "./ToDo";
 
 function AddNewTodo() {
 
-  const [task, setTask]: any[] = useState([])
+  const [tasks, setTasks]: any[] = useState([])
   const [newTask, setNewTask]: any[] = useState('')
 
   function handleCreateNewTodo() {
     event?.preventDefault();
-    setTask([
-      ...task,
+    setTasks([
+      ...tasks,
       {
         id: uuidv4(),
         isFinished: false,
@@ -24,6 +24,15 @@ function AddNewTodo() {
   function handleNewTaskChange($event: any){
     setNewTask($event?.target.value)
   }
+
+  function deleteTask(id: any){
+    const taskToDelete = tasks.filter((task: any) => {
+        console.log(id)
+        return task.id !== id
+    })
+    setTasks(taskToDelete)
+  }
+
   return (
     <>
     <form onSubmit={handleCreateNewTodo} className="newTaskForm">
@@ -33,11 +42,12 @@ function AddNewTodo() {
       </button>
     </form>
     <div>
-     {task.map((val: { id: any; isFinished: any; title: any; })=> (
+     {tasks.map((val: { id: any; isFinished: any; onDelete: any; title: any; })=> (
       <ToDo
         key={val.id}
         id={val.id}
         isFinished={val.isFinished}
+        onDelete={deleteTask}
         title={val.title}
       />
     ))}

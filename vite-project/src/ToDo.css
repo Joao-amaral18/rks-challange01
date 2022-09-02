@@ -14,3 +14,9 @@
 .checkmark{
     margin: 0 0.5rem 0 0rem
 }
+
+.deleteButton{
+    background: none;
+    border: none;
+    border-radius: 0;
+}
