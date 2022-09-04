@@ -1,4 +1,4 @@
-import AddNewTodo from './AddNewTodo'
+import AddNewTodo from './_AddNewTodo'
 import ToDo from './ToDo'
 import './App.css'
 import './Global.css'
