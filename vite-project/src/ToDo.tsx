@@ -2,6 +2,17 @@ import { TrashSimple } from "phosphor-react";
 import { useState } from "react";
 import "./ToDo.css";
 
+interface ToDoProps {
+  title: string;
+  chicken: number;
+  salp: number;
+  chickenLegs: number;
+  beans: number;
+  id: any;
+  isFinished: boolean;
+  onDelete: any;
+}
+
 function ToDo({
   title,
   chicken,
@@ -11,7 +22,7 @@ function ToDo({
   id,
   isFinished,
   onDelete,
-}) {
+}: ToDoProps) {
   const [isComplete, setIsComplete] = useState(isFinished);
 
   function handleCompletion() {
