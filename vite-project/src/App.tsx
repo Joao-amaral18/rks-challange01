@@ -1,19 +1,17 @@
-import AddNewTodo from './_AddNewTodo'
-import ToDo from './ToDo'
-import './App.css'
-import './Global.css'
-import Navbar from './Navbar'
+import AddNewTodo from "./AddNewTodo";
+import ToDo from "./ToDo";
+import "./App.css";
+import "./Global.css";
+import Navbar from "./Navbar";
 function App() {
-
   return (
     <div className="App">
-        <Navbar/>
-        <div className='Container'>
-        <AddNewTodo/>
-        
+      <Navbar />
+      <div className="Container">
+        <AddNewTodo />
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
-export default App
+export default App;
