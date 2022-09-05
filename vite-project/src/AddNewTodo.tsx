@@ -55,8 +55,8 @@ function AddNewTodo() {
     });
     setTasks(taskToDelete);
   }
-  const [totalRemaning, setTotalRemaing] = useState(0)
-  
+  const [totalRemaning, setTotalRemaing] = useState(0);
+
   return (
     <>
       <form onSubmit={handleCreateNewTodo} className="newTaskForm">
@@ -102,7 +102,16 @@ function AddNewTodo() {
       <div>
         {console.log(tasks.length)}
         {tasks.map(
-          (val: { id: any; isFinished: any; onDelete: any; title: any;chicken: any;chickenLegs: any;beans: any;salp: any }) => (
+          (val: {
+            id: any;
+            isFinished: any;
+            onDelete: any;
+            title: any;
+            chicken: any;
+            chickenLegs: any;
+            beans: any;
+            salp: any;
+          }) => (
             <ToDo
               key={val.id}
               id={val.id}
