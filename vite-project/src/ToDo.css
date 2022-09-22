@@ -1,13 +1,13 @@
 .task {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display:flex;
   padding: 1rem;
+  height:100%;
+  width:100%;
   background: var(--gray-500);
   color: var(--gray-100);
   margin: 0.75rem 0 0.75rem;
   border: solid 1px var(--gray-100);
   border-radius: 8px;
-  gap: 5px 5px;
 }
 .complete {
   color: var(--gray-300);
@@ -28,13 +28,19 @@ span {
   border: solid 1px var(--gray-300);
   border-radius: 8px;
   margin: 2px;
+  overflow:hidden
+
   display: inline-block;
   padding: 1rem;
-  font-weight: 500;
+}
+
+p {
+  border-radius: 8px;
+  display:flex;
+  padding: 1rem;
 }
 
 .isFinished {
-  padding: 1rem;
   background-color: var(--purple-500);
   color: var(--white);
   font-weight: 600;

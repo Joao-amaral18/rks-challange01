@@ -4,10 +4,6 @@ import "./ToDo.css";
 
 interface ToDoProps {
   title: string;
-  chicken: number;
-  salp: number;
-  chickenLegs: number;
-  beans: number;
   id: any;
   isFinished: boolean;
   onDelete: any;
@@ -15,10 +11,6 @@ interface ToDoProps {
 
 function ToDo({
   title,
-  chicken,
-  salp,
-  chickenLegs,
-  beans,
   id,
   isFinished,
   onDelete,
@@ -41,20 +33,12 @@ function ToDo({
             className={isComplete ? "isFinished completeButton" : "isFinished"}
             onClick={handleCompletion}
           >
-            Vendido
+            finalizado
           </button>
         </label>
       </div>
       <div>
-        <h4>Nome : {title}</h4>
-
-        <span>{chicken} Frango</span>
-
-        <span>{chickenLegs} Coxa</span>
-
-        <span>{beans} Feijão</span>
-
-        <span>{salp} Salpicão</span>
+        <p>{title}</p>
       </div>
       <div>
         <button className="deleteButton" onClick={handleDeleteTask}>
